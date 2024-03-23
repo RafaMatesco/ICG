@@ -1,0 +1,47 @@
+1-
+public void desenharSenoide(int xc, int yc, int raio, Color cor, PaintEventArgs e, int anguloDado)
+        {
+            
+            int x;
+            int y;
+            double ang = 0;
+
+            for (int i = 0; i < anguloDado; i++)
+            {
+                if (i%180 == 0)
+                {
+                    xc += raio*2;
+                    ang = i * Math.PI / 180;
+                    x = (int)(xc + raio * Math.Cos(ang));
+                    y = (int)(yc + raio * Math.Sin(ang));
+                    pintap(x, y, cor, e);
+                    
+                }
+                else
+                {
+                    ang = i * Math.PI / 180;
+                    x = (int)(xc + raio * Math.Cos(ang));
+                    y = (int)(yc + raio * Math.Sin(ang));
+                    pintap(x, y, cor, e);
+                }
+            }
+        }
+
+2-
+
+3-
+public void desenharQuadrante(int xc, int yc, int raio, Color cor, PaintEventArgs e)
+        {
+            
+            int x;
+            int y;
+            double ang = 0;
+
+            for (int i = 0; i < 90; i++)
+            {
+                ang = i * Math.PI / 180;
+                x = (int)(xc - raio * Math.Cos(ang));
+                y = (int)(yc + raio * Math.Sin(ang));
+                pintap(x, y, cor, e);
+                
+            }

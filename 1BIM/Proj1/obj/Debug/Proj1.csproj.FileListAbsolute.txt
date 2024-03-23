@@ -1,0 +1,11 @@
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\bin\Debug\Proj1.exe.config
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\bin\Debug\Proj1.exe
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\bin\Debug\Proj1.pdb
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.csproj.AssemblyReference.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.csproj.SuggestedBindingRedirects.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.Form1.resources
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.Properties.Resources.resources
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.csproj.GenerateResource.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.csproj.CoreCompileInputs.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.exe
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\Proj1\obj\Debug\Proj1.pdb

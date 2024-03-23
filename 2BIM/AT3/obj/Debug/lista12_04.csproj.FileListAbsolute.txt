@@ -1,0 +1,11 @@
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\bin\Debug\lista12_04.exe.config
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\bin\Debug\lista12_04.exe
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\bin\Debug\lista12_04.pdb
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.csproj.AssemblyReference.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.csproj.SuggestedBindingRedirects.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.Form1.resources
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.Properties.Resources.resources
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.csproj.GenerateResource.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.csproj.CoreCompileInputs.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.exe
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\lista12_04\obj\Debug\lista12_04.pdb

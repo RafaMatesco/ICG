@@ -1,0 +1,40 @@
+* Colegio Técnico Antônio Teixeira Fernandes (Univap)
+ * Curso Técnico em Informática - Data de Entrega: 12/04/2020
+ * Autores do Projeto: Rafael Matesco
+ *   
+ * Turma: 2H
+ * Atividade Proposta em aula
+ * Observação: <colocar se houver>
+ * 
+ * 
+ * ******************************************************************/
+public Color cor(int r, int g, int b)
+        {
+            return Color.FromArgb(r, g, b);
+        }
+        public Pen caneta(Color cor, int espessura, float[] styleLinha)
+        {
+            return estiloLinha(new Pen(cor, espessura), styleLinha);
+        }
+        public Pen estiloLinha(Pen caneta, float[] styleLinha)
+        {
+            caneta.DashPattern = styleLinha;
+            return caneta;
+        }
+        public void desenhaQuadrilatero(PaintEventArgs e, Pen caneta, int altura, int largura, int x, int y)
+        {
+            e.Graphics.DrawRectangle(caneta, x, y, largura, altura);
+
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            float[] styleLinha = { 20, 1 };
+
+            Color intensidade = cor(0, 0, 0);
+
+            Pen canetinha = caneta(intensidade, 1, styleLinha);
+
+            desenhaQuadrilatero(e, canetinha, 200, 400, 200, 200);
+
+        }

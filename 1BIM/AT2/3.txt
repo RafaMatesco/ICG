@@ -1,0 +1,58 @@
+
+/* Colegio Técnico Antônio Teixeira Fernandes (Univap)
+ * Curso Técnico em Informática - Data de Entrega: 07/04/2023
+ * Autores do Projeto: Rafael Matesco
+ *   
+ * Turma: 2H
+ * Atividade Proposta em aula
+ * Observação: <colocar se houver>
+ * 
+ * 
+ * ******************************************************************/
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+       public Color cor(int r, int g, int b)
+        {
+            Color cor = new Color();
+            cor = Color.FromArgb(r, g, b);
+            return cor;
+        }
+
+        public Pen caneta()
+        {
+            Pen caneta = new Pen(cor(0, 0, 0), 2);
+            return caneta;
+        }
+
+
+        public void linha(PaintEventArgs e, int xf, int yf, int xi, int yi, Pen caneta)
+        {
+            e.Graphics.DrawLine(caneta, xi, yi, xf, yf);
+        }
+
+
+        public void retangulo(PaintEventArgs e, int x0, int y0, int x1, int y1, Pen caneta)
+        {
+            int x3 = x1 - x0; 
+            int y3 = y1 - y0;
+            linha(e, x0, y0+y3, x0, y0, caneta); // reta da esquerda
+            linha(e, x0+x3, y0, x0, y0, caneta); // reta de cima
+            linha(e, x0+x3, y0+y3, x0, y0+y3, caneta); // reta de baixo
+            linha(e, x0+x3, y0+y3, x0+x3, y0, caneta); // reta da direita
+        }
+
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            int x0 = 400;
+            int y0 = 250;
+            int x1 = 750;
+            int y1 = 450;
+
+            retangulo(e, x0, y0, x1, y1, caneta(0,0,0));
+        }

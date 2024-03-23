@@ -1,0 +1,63 @@
+* Colegio Técnico Antônio Teixeira Fernandes (Univap)
+ * Curso Técnico em Informática - Data de Entrega: 12/04/2020
+ * Autores do Projeto: Rafael Matesco
+ *   
+ * Turma: 2H
+ * Atividade Proposta em aula
+ * Observação: <colocar se houver>
+ * 
+ * 
+ * ******************************************************************/
+public Color cor(int r, int g, int b)
+        {
+            return Color.FromArgb(r, g, b);
+        }
+        public Pen caneta(Color cor, int espessura)
+        {
+            return new Pen(cor, espessura);
+        }
+      
+        public void retaBreseham(int x0, int y0, int x1, int y1, Pen caneta, PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(caneta, x0, y0, x1, y1);
+        }
+
+        public int calculaDistanciaReta(int x0, int y0, int x1, int y1)
+        {
+            int Dab = (int)Math.Sqrt(Math.Pow((x1 - x0), 2) + Math.Pow((y1 - y0), 2));
+            return Dab;
+        }
+        public void triangulo(PaintEventArgs e, Pen caneta, int x0, int y0, int x1, int y1, int x2, int y2)
+        {
+            retaBreseham(x0, y0, x1, y1, caneta, e);
+            retaBreseham(x1, y1, x2, y2, caneta, e);
+            retaBreseham(x2, y2, x0, y0, caneta, e);
+
+            int a = calculaDistanciaReta(x0, y0, x1, y1);
+            int b = calculaDistanciaReta(x1, y1, x2, y2);
+            int c = calculaDistanciaReta(x2, y2, x0, y0);
+
+
+            if (a+b>c && a+c>b && b+c>a)
+            {
+                label1.Text = "triangulo válido\n";
+                if(a == b &&  b == c && c == a)
+                {
+                    label1.Text += "triangulo Equilatero";
+                }
+            }
+            
+        }
+
+            public void Form1_Paint(object sender, PaintEventArgs e)
+            {
+
+                Pen canetinha = caneta(cor(0,0,0), 1);
+                triangulo(e, canetinha, 300, 400, 350, 350, 400, 400);
+
+            }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }

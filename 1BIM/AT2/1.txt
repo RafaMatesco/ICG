@@ -1,0 +1,49 @@
+/* Colegio Técnico Antônio Teixeira Fernandes (Univap)
+ * Curso Técnico em Informática - Data de Entrega: 07/04/2023
+ * Autores do Projeto: Rafael Matesco
+ *   
+ * Turma: 2H
+ * Atividade Proposta em aula
+ * Observação: <colocar se houver>
+ * 
+ * 
+ * ******************************************************************/
+
+public Color cor(int r, int g, int b)
+        {
+            Color cor = new Color();
+            cor = Color.FromArgb(r, g, b);
+            return cor;
+        }
+
+        public Pen caneta()
+        {
+            Pen caneta = new Pen(cor(0, 0, 0), 2);
+            return caneta;
+        }
+
+
+        public void linha(PaintEventArgs e, int xf, int yf, int xi, int yi, Pen caneta)
+        {
+            e.Graphics.DrawLine(caneta, xi, yi, xf, yf);
+        }
+
+
+        public void triangulo(PaintEventArgs e, int x0, int y0, int x1, int y1, int x2, int y2, Pen caneta)
+        {
+            linha(e, x1, y1, x0, y0, caneta);
+            linha(e, x2, y2, x1, y1, caneta);
+            linha(e, x0, y0, x2, y2, caneta);
+        }
+
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            int x0 = 200;
+            int y0 = 600;
+            int x1 = 450;
+            int y1 = 300;
+            int x2 = 700;
+            int y2 = 600;
+            triangulo(e, x0, y0, x1, y1, x2, y2, caneta(0,0,0));
+        }

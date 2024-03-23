@@ -1,0 +1,4 @@
+http://www.di.ufpe.br/~if124/vrml/cores_em_vrml.htm
+http://www.inf.pucrs.br/~manssour/VRML/ConceitosImportantes.html
+LOD
+http://www-usr.inf.ufsm.br/~pollo/TG/capitulo6.html

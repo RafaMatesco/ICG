@@ -1,0 +1,172 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 30, outubro de 2023 �s 09:05
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["WALK"]
+  }
+
+Viewpoint
+     {
+             position 12 .3 0
+            orientation 0 1 0 .7
+     } 
+ 
+PointLight
+     {
+             intensity  .5
+             color 1 1 1
+             location -5 4 5
+     } 
+
+
+
+Transform {
+     children [
+
+	Transform {
+ 		translation 2 .2 -6
+		children [
+			  Shape {
+  appearance Appearance {
+ 
+     material Material {
+                                   			 diffuseColor     1 1 1
+                                   			 emissiveColor   0 0 0
+                                   			 specularColor    0.9 0.9 0.9
+                                   			 ambientIntensity 1
+                                   			 shininess       0.5
+                                   			 transparency     0
+                   			 	}
+  }
+     geometry Cone {  
+        	         bottomRadius 4
+                       height      4
+                       side      TRUE
+                       bottom    TRUE
+                   }
+ }
+		]	
+	}
+	
+	Transform {
+ 		translation 2 .2 -6
+    		scale 0.15 0.05 1.0
+		children [
+			Shape {
+               			appearance Appearance {
+               
+                    				material Material {
+                                   			 diffuseColor     1 1 1
+                                   			 emissiveColor   0 0 0
+                                   			 specularColor    0.9 0.9 0.9
+                                   			 ambientIntensity 1
+                                   			 shininess       0.5
+                                   			 transparency     0
+                   			 	}
+
+               			}
+               			geometry Sphere { radius 5 }
+
+          			}
+		]	
+	}
+
+	Transform {
+               translation 4 .2 -6
+               rotation 0 0 1 1.57
+               children [
+                    Shape {
+                         appearance Appearance {
+                              texture ImageTexture {
+                                   url ["C:\textures\planeBody.jpg"]
+                              }
+                              material Material {
+                                  diffuseColor     1 1 1
+                                   emissiveColor   0 0 0
+                                   specularColor    0.9 0.9 0.9
+                                   ambientIntensity 1
+                                   shininess       0.5
+                                   transparency     0
+                              }
+                         }
+                         geometry Cylinder {  
+                              bottom   TRUE
+                              radius      .6
+                              height      4
+                              side      TRUE
+                              top      TRUE
+                         }
+                    }
+               ]
+          }
+
+          Transform {
+               translation 0 .2 -6
+               rotation 0 0 1 -1.57
+               children [
+                    Shape {
+                         appearance Appearance {
+                              texture ImageTexture {
+                                   url ["C:\textures\planeBody.jpg"]
+                              }
+                              material Material {
+                                    diffuseColor     1 1 1
+                                   emissiveColor   0 0 0
+                                   specularColor    0.9 0.9 0.9
+                                   ambientIntensity 1
+                                   shininess       0.5
+                                   transparency     0
+                              }
+                         }
+                         geometry Cylinder {  
+                              bottom   TRUE
+                              radius      .6
+                              height      4
+                              side      TRUE
+                              top      TRUE
+                         }
+                    }
+               ]
+          }
+          Transform {
+               translation -2 .2 -6
+               rotation 0 0 0 0
+               children [
+                    Shape {
+                         geometry Sphere {
+                              radius .61
+                         }
+                         appearance Appearance {
+                              texture ImageTexture {
+                                   url ["C:\textures\planeNose.jpg"]
+                              }
+                              material Material {
+                                   diffuseColor     1 0.829 0.829
+                                   emissiveColor    0 0 0
+                                   specularColor    0.296648 0.296648 0.296648
+                                   ambientIntensity 0
+                                   shininess       0.088
+                                   transparency     0
+                              }
+                         }
+                    }
+               ]
+          }
+     ]
+}
+
+
+
+      Background
+      {
+            skyColor [ 0, 0.4, 1 ]
+          skyAngle [ 0.78, 1.54 ]
+          groundColor [ 0.3, 0.3, 0.3]
+          groundAngle [ 0.78, 1.54 ]
+      } 
+
+

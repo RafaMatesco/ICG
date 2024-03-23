@@ -1,0 +1,11 @@
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at 2 bimestre.csproj.AssemblyReference.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at 2 bimestre.csproj.SuggestedBindingRedirects.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at_2_bimestre.Properties.Resources.resources
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at 2 bimestre.csproj.GenerateResource.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at 2 bimestre.csproj.CoreCompileInputs.cache
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\bin\Debug\at 2 bimestre.exe.config
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\bin\Debug\at 2 bimestre.exe
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\bin\Debug\at 2 bimestre.pdb
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at_2_bimestre.Form1.resources
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at 2 bimestre.exe
+C:\Users\mates\Documents\UNIVAP\3 ano\ICG\at 2 bimestre\obj\Debug\at 2 bimestre.pdb

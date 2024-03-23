@@ -1,0 +1,20 @@
+/* Colegio Técnico Antônio Teixeira Fernandes (Univap)
+ * Curso Técnico em Informática - Data de Entrega: 07/04/2023
+ * Autores do Projeto: Rafael Matesco
+ *   
+ * Turma: 2H
+ * Atividade Proposta em aula
+ * Observação: <colocar se houver>
+ * 
+ * 
+ * ******************************************************************/
+
+a) Foram usadas as primitivas para resgatar o valor da intensidade usada, a primitiva para definir as propriedades da caneta e a primitiva da reta, para desenhar uma reta entre duas coordenadas.
+b) A principal primitiva foi a da reta: 
+	public void linha(PaintEventArgs e, int xf, int yf, int xi, int yi, Pen caneta)
+        {
+            e.Graphics.DrawLine(caneta, xi, yi, xf, yf);
+        }
+c) A principal primitiva foi a da reta pois ela foi utilizada em todos os exercícios e para fazer todas as arestas de todas as formas geométricas desenhadas.
+
+d) As técnicas utilizadas para a realização dos exercícios foram aprendidas em aula e são os conceitos básicos da computação gráfica.
